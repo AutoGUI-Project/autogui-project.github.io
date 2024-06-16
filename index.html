@@ -111,49 +111,41 @@
 
 <body>
     <div class="container" id="main">
-        
-        <div class="row">
-            <p></p> <p></p>
-            <div class="col-md-12 text-center">
-                <font size="+5"><b>AutoGUI: </b></font><br> <font size="+3">Scaling GUI Grounding with Autonomous Functionality Annotations from LLMs</font><br>
+        <section class="header">
+            <div class="row">
+                <p></p> <p></p>
+                <div class="col-md-12 text-center">
+                    <font size="+5"><b><span class="gradient-color">AutoGUI</span>: </b></font><br> <font size="+3">Scaling GUI Grounding with Autonomous Functionality Annotations from LLMs</font><br>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul class="list-inline">
-                    <p>
-                        Hongxin Li<sup>1,2*</sup>,
-                        Jingran Sui<sup>3,4*</sup>, 
-                        Jingran Su<sup>3,4*</sup>, 
-                        Yuntao Chen<sup>3†</sup>, 
-                        Qing Li<sup>4</sup>, 
-                        Zhaoxiang Zhang<sup>1,2,3,5</sup>
-                    </p>
-                    <p>
-                        <sup>1</sup>School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS) <br>
-                        <sup>2</sup>State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS), Institute of Automation, Chinese Academy of Sciences <br>
-                        <sup>3</sup>Centre for Artificial Intelligence and Robotics (CAIR), Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences <br>
-                        <sup>4</sup>The Hong Kong Polytechnic University     
-                        <sup>5</sup>Shanghai Artificial Intelligence Laboratory
-                    </p>
-                    <p>
-                        <sup>*</sup>Equal contribution.<br>
-                        <sup>†</sup>Corresponding
-                    </p>
-                    
-                    <br><br>
-                    <!-- Institutes -->
-                    <!-- <sup>1</sup><a href="http://g.co/robotics">
-                        <img src="img/rng-logo.png" height="37px"> </a>
-                        <sup>2</sup><a href="https://www.tu.berlin/en/">
-                        <img src="img/tuberlin.png" height="32px"> </a> &nbsp;&nbsp;
-                        <sup>3</sup><a href="https://research.google/teams/brain/">  
-                        <img src="img/google-research-logo.png" height="25px"> </a>  -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="list-inline">
+                        <p>
+                            Hongxin Li<sup>1,2*</sup>,
+                            Jingran Sui<sup>3,4*</sup>, 
+                            Jingran Su<sup>3,4*</sup>, 
+                            Yuntao Chen<sup>3†</sup>, 
+                            Qing Li<sup>4</sup>, 
+                            Zhaoxiang Zhang<sup>1,2,3,5</sup>
+                        </p>
+                        <p>
+                            <sup>1</sup>School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS) <br>
+                            <sup>2</sup>State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS), Institute of Automation, Chinese Academy of Sciences <br>
+                            <sup>3</sup>Centre for Artificial Intelligence and Robotics (CAIR), Hong Kong Institute of Science & Innovation, Chinese Academy of Sciences <br>
+                            <sup>4</sup>The Hong Kong Polytechnic University     
+                            <sup>5</sup>Shanghai Artificial Intelligence Laboratory
+                        </p>
+                        <p>
+                            <sup>*</sup>Equal contribution.<br>
+                            <sup>†</sup>Corresponding
+                        </p>
                         
-                    </ul>
+                        <br><br>      
+                        </ul>
 
+                </div>
             </div>
-        </div>
 
 
         <div class="row">
@@ -192,13 +184,13 @@
                     </li> -->
                     <li>
                         <a href="https://github.com/BraveGroup">
-                        <image src="img/github.png" height="60px">
+                        <image src="img/data_icon.png" height="60px">
                             <h4><strong>Training Data</strong></h4>
                         </a>                   
                     </li>
                     <li>
                         <a href="https://github.com/BraveGroup">
-                        <image src="img/github.png" height="60px">
+                        <image src="img/zip_icon.png" height="60px">
                             <h4><strong>Test Data (zipped)</strong></h4>
                         </a>                   
                     </li>
@@ -211,7 +203,7 @@
                 </ul>
             </div>
         </div>
-
+    </section>
         <!-- <section class="hero teaser">
             <div class="container is-max-widescreen">
               <div class="columns is-centered">
@@ -223,14 +215,31 @@
                 </div>
               </div>
           </div></section> -->
+    
+    <section>
+        <div class="columns is-centered">
+            <h3><span class="gradient-color" style="font-weight:bold">AutoGUI</span> provides high-quality functionality annotations for User Interface (UI) elements in a scalable&#128640 manner, establishing itself as a cornerstone for building intelligent UI agents.</h3>
+            
+            <div class="column highlight is-8 content">
+              
+                
+                <br>
+              <video class="simple-demo" controls="" autoplay="" playsinline="" muted="" loop="" poster="demo/thumbnail.png">
+                <source src="demo/func_anno_simple_demo.mp4" type="video/mp4">
+              </video>
+              <br>
+            </div>
+          </div>
+    </section>
 
+    <section  class="col-md-8 col-md-offset-2 col-xs-12">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <div>
                 <!-- <video id="v0" width="100%" playsinline muted loop autoplay onclick="setAttribute('controls', 'true');">
                     <source src="videos/SheetCopilot Demo2_1k.mp4" type="video/mp4">
                 </video>		 -->
 
-                <h3>
+                <h3 class="title is-3">
                     Abstract
                 </h3>
                 <p class="text-justify">
@@ -239,74 +248,157 @@
             </div>
         </div>
 
-        <div class="row" id="demo">
-            <div class="col-md-8 col-md-offset-2 col-xs-12">
-                <h3>
-                    AutoGUI Data Samples
-                </h3>
-                
-                
-                <h3>
-                    AutoGUI: A Scalable Pipeline that Provides Unlimited UI Element Functionality Data
-                </h3>
+        <div class="">
+            <md-block rendered="content"><p><em>Updates</em></p>
+        <ul>
+        <li>2024-6-14: AutoGUI-v1 released.</li>
+        </ul>
+        </md-block>
+                </div>
+    </section>
 
+    <br><br>
+    <section  class="col-md-8 col-md-offset-2 col-xs-12">
+        <div class="row" id="demo">
+            <div>
+                <h3>
+                    Overview of AutoGUI Dataset
+                </h3>
+                
+                <p>
+                    <span class="gradient-color">AutoGUI</span> contains 627k UI grounding/captioning tasks involving 861 domains from Common Crawl. Different from exsiting UI datasets, AutoGUI provides abundant UI functionality annotations and focuses on functionality grounding/captioning tasks. Moreover, these tasks are all automatically generated without human experts. 
+                </p><br>
+
+                <p>Each sample in the training set serves as either a grounding or captioning task, containing the following information:</p>
+                <ul>
+                    <li> <code>Functionality</code> that describes the contextual functionality of an element.</li>
+                    <li> <code>Target Element</code> that provides the attributes of the element associated with the functionality label.</li>
+                    <ul>
+                      <li>Element Position: the original bounding box coordinates <code>[left,top,right,bottom]</code> as well as the center point <code>(X,Y)</code>normalized within the range 0-100 are provided.
+                      </li>
+                      <li>Element Text: The displayed text of alt-text of the element.
+                      </li>
+                      <li>Device Type: Whether the task is collected in a view of a web browser or mobile phone.
+                    </li>
+                    </ul>
+                    <li><code>UI Screenshot</code> that records the UI image on which the element is displayed:
+                  </li></ul>
+            </div>
+        </div>
+        
+        <br>
+        <h3>
+            Dataset Comparison
+        </h3>
+        <p><span class="gradient-color" style="font-weight:bold">AutoGUI</span> distinguishes itself from existing dataset by providing functionality-rich data as well as tasks that require VLMs to discern the functionalities of substantial elements to achieve high grounding accuracy.</p>
+        <br>
+        <div class="scrollable-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dataset</th>
+                        <th>UI Type</th>
+                        <th>Multi-Res</th>
+                        <th style="width: 15%">Real-world<br>Scenario</th>
+                        <th>Autonomous Annotation</th>
+                        <th>Functionality Sementics</th>
+                        <th>#Annotations</th>
+                        <th>UI Task</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://webshop-pnlp.github.io/">WebShop</a></td><td>Web</td><td>✖</td><td>✖</td><td>✖</td><td>✖</td><td>12k</td><td>Web Navigation</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://osu-nlp-group.github.io/Mind2Web/">Mind2Web</a></td><td>Web</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>2.4k</td><td>Web Navigation</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://webarena.dev/">WebArena</a></td><td>Web</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>812</td><td>Web Navigation</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://paperswithcode.com/dataset/screen2words">Screen2Words</a></td><td>Mobile</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>112k</td><td>UI Summarization</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/google-research-datasets/widget-caption">Widget Captioning</a></td><td>Mobile</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>163k</td><td>Element Captioning</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://paperswithcode.com/dataset/pixelhelp">PixelHelp</a></td><td>Mobile</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>187</td><td>Element Grounding</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://paperswithcode.com/dataset/ricosca"></a>RICOSCA</td><td>Mobile</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>295k</td><td>Action Grounding</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/aburns4/MoTIF"></a>MoTIF</td><td>Mobile</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>6k</td><td>Mobile Navigation</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/google-research/google-research/tree/master/android_in_the_wild">AITW</a></td><td>Mobile</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>715k</td><td>Mobile Navigation</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/google-research-datasets/uibert">RefExp</a></td><td>Mobile</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>20.8k</td><td>Element Grounding</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://visualwebbench.github.io/">VisualWebBench</a></td><td>Web</td><td>✖</td><td>✔</td><td>✖</td><td>✖</td><td>1.5k</td><td>UI Grounding & Referring</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/njucckevin/SeeClick">SeeClick Web</a></td><td>Web</td><td>✖</td><td>✔</td><td>✔</td><td>✖</td><td>271k</td><td>Element Grounding</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/THUDM/CogAgent">UI REC/REG</a></td><td>Web</td><td>✔</td><td>✔</td><td>✔</td><td>✖</td><td>400k</td><td>Box2DOM, DOM2Box</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://arxiv.org/abs/2404.05719">Ferret-UI</a></td><td>Mobile</td><td>✔</td><td>✔</td><td>✔</td><td>✖</td><td>250k</td><td>UI Grounding & Referring</td>
+                    </tr>
+                    <tr>
+                        <td><span class="gradient-color" style="font-weight:bold">AutoGUI</span> (ours)</td><td>Web, Mobile</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>627k</td><td>Functionality Grounding & Captioning</td>
+                    </tr>
+                    <!-- More rows here -->
+                </tbody>
+
+            </table>
+        </div>
+        
+        <br><br>
+        <h3>Explore the <span class="gradient-color">AutoGUI</span> Dataset</h3>
+        <p>The following explorer allows you to look into several examples of the training data. You can click the dashed blue box to view its functionality annotation generate by our AutoGUI pipeline.
+        </p>
+
+        <div class="slider">
+            <div class="content" id="content">
+                <div class="image-container">
+                    <img id="autogui-image" src="" alt="Random Image">
+                </div>
+            </div>
+            <div class="sidebar">
+                <ul id="funcs"></ul>
+            </div>
+            <div class="buttons">
+                <button class="nav-btn" onclick="showPreviousContent()">Previous</button>
+                <button class="nav-btn" onclick="showNextContent()">Next</button>
+                <button class="nav-btn" onclick="showRandomContent()">Random</button>
             </div>
         </div>
 
+    </section>
 
-<!-- 
-        <div class="row" id="dataset">
-            <div class="col-md-8 col-md-offset-2 col-xs-12">
-                <h3>
-                    Dataset
-                </h3>
-                <p class="text-justify">
-                    We construct the SheetCopilot dataset, <a href="https://paperswithcode.com/dataset/sheetcopilot">a high-quality evaluation benchmark</a> as a foundation for assessing the spreadsheet control capabilities of various methods interested in this field, such as LLM-based methods and reinforcement learning-based methods.<br>
-                    The dataset contains 28 evaluation workbooks and 221 spreadsheet manipulation tasks applied to these workbooks. These tasks involve diverse atomic actions related to the six task categories (i.e. Entry and manipulation, Formatting, Management, Charts, Pivot Table, and Formula).<br>
-                    <b>Dataset statistics:</b><br>
-                    1. Each task possesses one or more ground truth solutions.<br>
-                    2. The lengths of the task instructions range from 20 to 530 characters, with most tasks between 80 and 110 characters.<br>
-                    3. The numbers of atomic actions required by the tasks range from 1 to 9.<br>
-                    <b>Evaluation metrics:</b>
-                    <ul class="text-justify">
-                        <li><b>Exec@1</b> measures the proportion of solutions executed without throwing exceptions.</li>
-                        <li><b>Pass@1</b> is used to evaluate functional correctness.</li>
-                        <li>Beyond correctness, we propose <b>A50</b> and <b>A90</b> scores to measure solution efficiency. These two metrics divide the number of atomic actions in a generated plan by the number in the ground truth and then calculate the 50th and 90th percentiles over all tasks. (Lower A50 and A90 scores indicate that the LLM tends to use fewer actions for completing a task.)</li>
-                    </ul>
-                    
-                    A submitted solution is considered correct if the properties to be checked match those of any of the GT solutions of the corresponding task.<br>
-                </p>
-                <p><br></p>
+    <section  class="col-md-8 col-md-offset-2 col-xs-12">
+        <h3><span class="gradient-color">AutoGUI</span> Characteristics</h3>
+        <p>Diversity of the verb-noun phrases of the AutoGUI dataset. The top 10 verbs and their top 5 following nouns are displayed to show that our dataset involve diverse UI functionalities.</p>
 
-                <!-- Dataset word clouds -->
-                <p style="text-align:center;">
-                    <img src="img/dataset_img/two_clouds.png" width="75%" alt="SheetCopilot example: Handling sales data.">
-                </p>
-                        
-                <p class="text-justify">
-                    <b>Dataset overview.</b> An overview of our dataset in shown by the wordclouds of the instructions and involved atomic actions. The two clouds show that our dataset contains diverse tasks that involve various spreadsheet operations.
-                </p>
-                <p><br></p>
+        <iframe src="verbnoun_sunburst.html" width="100%" height="600" style="border:none;"></iframe>
 
-                <!-- Cate proportions and donut chart -->
-                <p style="text-align:center;">
-                    <img src="img/dataset_img/CatePropAndVerbNoun.png" width="75%" alt="SheetCopilot example: Handling sales data.">
-                </p>
-                        
-                <p class="text-justify">
-                    ...
-                </p>
-                <p><br></p>
+        <br><br>
+        <p>The word cloud below illustrates the relative frequencies of the verbs that represent the primary intended actions described in the functionality annotations.</p>
+        <p style="text-align:center;">
+            <img src="img/word_cloud.png" width="75%" alt="AutoGUI word cloud">
+        </p>
+    </section>
 
-                <!-- Histograms -->
-                <p style="text-align:center;">
-                    <img src="img/dataset_img/Instruc&ActDistributions.png" width="75%" alt="SheetCopilot example: Handling sales data.">
-                </p>
-                        
-                <p class="text-justify">
-                    <b>Dataset statistics.</b>
-                </p>
-                <p><br></p>
+    <section  class="col-md-8 col-md-offset-2 col-xs-12">
+        <h3>Disclaimer</h3>
+        <p>This dataset has been compiled and disseminated exclusively for research purposes, with the objective of enhancing web accessibility through the application of language technologies. Any comercial use of the data is not permitted.</p>
+
+    </section>
 
                 
             </div>
@@ -314,25 +406,5 @@
         
     </div>
 
-    <script>
-    const myCarousel = document.getElementById('carouselExampleCaptions')
-    myCarousel.addEventListener('slide.bs.carousel', event => {
-        myCarousel.getElementsByClassName("carousel-item")[event.from].getElementsByTagName("video")[0].pause();
-        myCarousel.getElementsByClassName("carousel-item")[event.to].getElementsByTagName("video")[0].play();
-    })
-
-    const myCarousel2 = document.getElementById('carouselExampleCaptions2')
-    myCarousel2.addEventListener('slide.bs.carousel', event => {
-        myCarousel2.getElementsByClassName("carousel-item")[event.from].getElementsByTagName("video")[0].pause();
-        myCarousel2.getElementsByClassName("carousel-item")[event.to].getElementsByTagName("video")[0].play();
-    })
-
-    const myCarousel3 = document.getElementById('carouselExampleCaptions3')
-    myCarousel3.addEventListener('slide.bs.carousel', event => {
-        myCarousel3.getElementsByClassName("carousel-item")[event.from].getElementsByTagName("video")[0].pause();
-        myCarousel3.getElementsByClassName("carousel-item")[event.to].getElementsByTagName("video")[0].play();
-    })
-
-    </script>
 </body>
 </html>
