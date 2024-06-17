@@ -264,6 +264,54 @@ caption {
   text-align: center; /* Centers the caption */
 }
 
+/* Task Examples */
+.task-demo-section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.conversation {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cap-task-demo-section {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cap-task-image {
+  max-width: 100%;
+  max-height: 450px;
+  height: auto;
+  flex: 0 0 auto; /* Don't grow, don't shrink, initial size based on content */
+  margin-right: 20px;
+  border-radius: 8px;
+}
+.cap-task-conversation {
+  flex: 1; /* Grow to fill remaining space */
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
 /* Slider */
 .slider {
   width: 100%;

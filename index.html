@@ -266,10 +266,38 @@
                 </h3>
                 
                 <p>
-                    <span class="gradient-color">AutoGUI</span> contains 627k UI grounding/captioning tasks involving 861 domains from Common Crawl. Different from exsiting UI datasets, AutoGUI provides abundant UI functionality annotations and focuses on functionality grounding/captioning tasks. Moreover, these tasks are all automatically generated without human experts. 
+                    <span class="gradient-color">AutoGUI</span> contains 627k UI grounding/captioning tasks involving 861 domains from Common Crawl. Different from exsiting UI datasets, AutoGUI provides abundant UI functionality annotations without human experts and focuses on functionality grounding/captioning tasks.
+                    
+                    <br><br>
+                    <b>Task 1: Functionality Grounding</b>: Given a user's instruction that describes UI functionalities, models are prompted to output the 2D coordinates of the element targeted by the instruction. Note that the coordinates are normalized withing [0,100)
+                    <br>
+                    Example:
+                    <br>
+                    
+                    <div class="task-demo-section">
+                        <img src="img/func_grounding_sample.jpg" alt="Example Image" class="task-image">
+                        <div class="conversation">
+                            <p><b>User</b>: In this web page image, please locate the element as I describe it (with point). This element triggers a user registration process, allowing new users to create a PayPal account and gain access to the platform's services.</p>
+                            <p><b>Assistant</b>: (91,6)</p>
+                        </div>
+                    </div>
+
+                    <b>Task 2: Functionality Captioning</b>: Given a user's instruction that refers to a certain location in the format of a point, models are prompted to describe the functionality of the pointed element considering the UI context.
+                    <br>
+                    Example:
+                    <br>
+                    
+                    <div class="cap-task-demo-section">
+                        <img src="img/func_captioning_sample.jpg" alt="Example Image" class="cap-task-image">
+                        <div class="cap-task-conversation">
+                            <p><b>User</b>: What happens when you tap position (61,73) on the screen?</p>
+                            <p><b>Assistant</b>: This element serves as an input field for users to provide their birth date, contributing to the registration process by ensuring that users meet the age requirements for creating a Yahoo account.</p>
+                        </div>
+                    </div>
+
                 </p><br>
 
-                <p>Each sample in the training set serves as either a grounding or captioning task, containing the following information:</p>
+                <p>Every sample in the training set contains the following information:</p>
                 <ul>
                     <li> <code>Functionality</code> that describes the contextual functionality of an element.</li>
                     <li> <code>Target Element</code> that provides the attributes of the element associated with the functionality label.</li>
@@ -396,7 +424,8 @@
 
     <section  class="col-md-8 col-md-offset-2 col-xs-12">
         <h3>Disclaimer</h3>
-        <p>This dataset has been compiled and disseminated exclusively for research purposes, with the objective of building universal GUI agents through the application of foundation models. Any comercial use of the data is not permitted.</p>
+        <p>This dataset has been compiled and disseminated exclusively for research purposes, to build universal GUI agents through the application of foundation models. Any commercial use of the data is not permitted.
+        </p>
 
     </section>
 
